@@ -6,7 +6,7 @@ const host = process.env.HOST || '0.0.0.0';
 const port = process.env.PORT || 8080;
 
 corsProxy.createServer({
-    originWhitelist: ['http://localhost:3000', 'https://adjans.com.tr','https://rabbitcms.adjans.com.tr', 'https://nextshippingtr.com'],
+    originWhitelist: ['http://localhost:3000', 'https://adjans.com.tr', 'https://cors-server.adjans.com.tr'],
     requireHeader: ['origin', 'x-requested-with'],
     removeHeaders: ['cookie', 'cookie2']
 }).listen(port, host, () => {
