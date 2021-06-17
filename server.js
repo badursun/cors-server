@@ -33,6 +33,7 @@ cors_proxy.createServer({
     originWhitelist: [
         'http://localhost:3000',
         'https://adjans.com.tr',
+        'https://univerliseli.com',
         'https://cors-server.adjans.com.tr'
     ],
     requireHeader: ['origin', 'x-requested-with'],
