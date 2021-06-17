@@ -34,6 +34,7 @@ cors_proxy.createServer({
         'http://localhost:3000',
         'https://adjans.com.tr',
         'https://univerliseli.com',
+        'https://www.univerliseli.com',
         'https://cors-server.adjans.com.tr'
     ],
     requireHeader: ['origin', 'x-requested-with'],
