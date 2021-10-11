@@ -30,14 +30,8 @@ var checkRateLimit = require('./lib/rate-limit')(process.env.CORSANYWHERE_RATELI
 var cors_proxy = require('./lib/cors-anywhere');
 cors_proxy.createServer({
     originBlacklist: originBlacklist,
-    originWhitelist: [
-        'http://localhost:3000',
-        'https://adjans.com.tr',
-        'https://univerliseli.com',
-        'https://www.univerliseli.com',
-        'https://cors-server.adjans.com.tr'
-    ],
-    requireHeader: ['origin', 'x-requested-with'],
+    originWhitelist: originWhitelist,
+    requireHeader: [],
     checkRateLimit: checkRateLimit,
     removeHeaders: [
         'cookie',
